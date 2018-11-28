@@ -1,0 +1,28 @@
+<!-- name.html -->
+<head>
+<h1>Hello, {{name}}!</h1>
+
+
+<style>
+    div {
+        color: black;
+        font-size: 16pt;
+        font-family: helvetica;
+    }
+
+    .french {
+        color: black;
+        font-size: 11pt;
+        font-family: Times New Roman;
+  }
+
+</style>
+</head>
+<div><b> Today's top headers in technology are...</b>
+
+<ol style="list-style-type:none">
+{% for item in mylist %}
+    <p><b><li class="french">{{item}}</li></b></p>
+{% endfor %}
+</ol>
+</div>
