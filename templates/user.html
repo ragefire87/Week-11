@@ -1,6 +1,6 @@
 <!-- name.html -->
 <head>
-<h1>Hello, {{name}}!</h1>
+<h1>{{time}}, {{name}}!</h1>
 
 
 <style>
@@ -18,11 +18,17 @@
 
 </style>
 </head>
-<div><b> Today's top headers in technology are...</b>
+<div><b> Today's top headers in {{section}} are...</b>
 
 <ol style="list-style-type:none">
 {% for item in mylist %}
     <p><b><li class="french">{{item}}</li></b></p>
 {% endfor %}
 </ol>
+{%if url!= None:%}
+    {% for i,j in section_list %}
+    <b<li class="french"><a href="{{j}}"> {{i}} <br></a></li></b>
+    {% endfor %}
+{%endif%}
+
 </div>
