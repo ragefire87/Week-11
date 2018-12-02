@@ -17,7 +17,7 @@ def about():
       '''
     return html
 
-section_list = ['home', 'world', 'politics', 'nyregion', 'business', 'opinion', 'technology', 'science', 'health', 'sports', 'arts', 'books', 'food', 'travel', 'magazine', 'realestate', 'upshot']
+section_list = ['home', 'world', 'politics', 'nyregion', 'business', 'opinion', 'technology', 'science', 'health', 'sports', 'arts', 'books', 'food', 'travel', 'magazine', 'realestate', 'upshot', 'automobiles', 'movies','theater', 'fashion','insider','tmagazine','sundayreview', 'orbituaries','national']
 
 @app.route('/user/<nm>/<section>')
 @app.route('/user/<nm>')
